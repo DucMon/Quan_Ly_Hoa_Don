@@ -18,7 +18,7 @@ namespace QL_HoaDon.GUI
         {
             Thread t = new Thread(new ThreadStart(StartForm));
             t.Start();
-            Thread.Sleep(5000);
+            Thread.Sleep(1000);
             InitializeComponent();
             t.Abort();
         }
@@ -30,6 +30,68 @@ namespace QL_HoaDon.GUI
         private void frmMain_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmNhapHangHoa1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmNhapHangHoa1.BringToFront();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmHome.BringToFront();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.Size = new Size(159, 98);
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.Size = new Size(159, 44);
+        }
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            button2.Size = new Size(159, 98);
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.Size = new Size(159, 44);
+        }
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            button3.Size = new Size(159, 98);
+        }
+
+        private void button3_MouseLeave(object sender, EventArgs e)
+        {
+            button3.Size = new Size(159, 44);
+        }
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            btnClose.Size = new Size(159, 98);
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            btnClose.Size = new Size(159, 44);
         }
     }
 }
