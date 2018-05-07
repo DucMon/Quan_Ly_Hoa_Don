@@ -1,7 +1,6 @@
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\QL_HoaDon.exe.config
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\QL_HoaDon.exe
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\QL_HoaDon.pdb
-C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.csprojResolveAssemblyReference.cache
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.frmLogin.resources
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.Properties.Resources.resources
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.csproj.GenerateResource.Cache
@@ -40,6 +39,7 @@ C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\es\Dev
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ja\DevExpress.XtraEditors.v14.2.resources.dll
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ru\DevExpress.XtraEditors.v14.2.resources.dll
 C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.exe.licenses
+<<<<<<< HEAD
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\QL_HoaDon.exe.config
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\QL_HoaDon.exe
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\QL_HoaDon.pdb
@@ -79,3 +79,54 @@ E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_Hoa
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.csproj.CopyComplete
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.exe
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.pdb
+=======
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraGrid.v14.2.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraLayout.v14.2.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraPrinting.v14.2.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.RichEdit.v14.2.Core.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraBars.v14.2.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraTreeList.v14.2.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.Office.v14.2.Core.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraGrid.v14.2.xml
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraLayout.v14.2.xml
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraPrinting.v14.2.xml
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.RichEdit.v14.2.Core.xml
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraBars.v14.2.xml
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.XtraTreeList.v14.2.xml
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\DevExpress.Office.v14.2.Core.xml
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\de\DevExpress.XtraGrid.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\es\DevExpress.XtraGrid.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ja\DevExpress.XtraGrid.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ru\DevExpress.XtraGrid.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\de\DevExpress.XtraLayout.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\es\DevExpress.XtraLayout.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ja\DevExpress.XtraLayout.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ru\DevExpress.XtraLayout.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\de\DevExpress.XtraPrinting.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\es\DevExpress.XtraPrinting.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ja\DevExpress.XtraPrinting.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ru\DevExpress.XtraPrinting.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\de\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\es\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ja\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ru\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\de\DevExpress.XtraBars.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\es\DevExpress.XtraBars.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ja\DevExpress.XtraBars.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ru\DevExpress.XtraBars.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\de\DevExpress.XtraTreeList.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\es\DevExpress.XtraTreeList.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ja\DevExpress.XtraTreeList.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ru\DevExpress.XtraTreeList.v14.2.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\de\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\es\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ja\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\bin\Debug\ru\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.frmNhapHangHoa.resources
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.GradientPanel.resources
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.Home_Control.resources
+C:\Users\khanh_000\Desktop\Lap trinh window\QL_HoaDon\QL_HoaDon\obj\Debug\QL_HoaDon.csprojResolveAssemblyReference.cache
+D:\Git\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\QL_HoaDon.exe.config
+D:\Git\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.exe
+D:\Git\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.pdb
+>>>>>>> 95eb92ccd132bcaff6af689e914a599b0252c854

@@ -124,5 +124,10 @@ namespace QL_HoaDon
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
