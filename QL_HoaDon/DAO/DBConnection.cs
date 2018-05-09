@@ -12,7 +12,7 @@ namespace QL_HoaDon.DAO
     class DBConnection
     {
         //Chuỗi kết nối
-        private static String _connectionString = @"Server=Uol;Database=QuanLyHoaDon;Trusted_Connection=True;";
+        private static String _connectionString = @"Data Source=.;Initial Catalog=QuanLyHoaDon;Integrated Security=True";
         //ExecuteQuery : Select
         public static DataTable ExecuteQuery(String sql)
         {

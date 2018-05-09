@@ -22,8 +22,7 @@ namespace QL_HoaDon.GUI
 
         private void Nhap_Hang_Hoa_Control_Load(object sender, EventArgs e)
         {
-            DataTable _dshh = HangHoaBLL.LayDSHH();
-            dgvHangHoa.DataSource = _dshh;
+            LoadDSHH();
         }
 
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
@@ -50,6 +49,7 @@ namespace QL_HoaDon.GUI
                 if (kq1 == true)
                 { 
                         MessageBox.Show("Thêm hàng hóa thành công!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadDSHH();
                 }
                 else
                     MessageBox.Show("hàng hóa này đã có!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -73,11 +73,15 @@ namespace QL_HoaDon.GUI
         {
             tbGia.Text = "";
         }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
+        public void LoadDSHH()
         {
             DataTable _dshh = HangHoaBLL.LayDSHH();
             dgvHangHoa.DataSource = _dshh;
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadDSHH();
         }
         private void btnDel_Click(object sender, EventArgs e)
         {
@@ -94,6 +98,7 @@ namespace QL_HoaDon.GUI
                         if (kq1 == true)
                         {
                             MessageBox.Show("Xóa thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadDSHH();
                        
                         }
                         else
@@ -164,6 +169,7 @@ namespace QL_HoaDon.GUI
                 if (kq1 == true)
                 {
                     MessageBox.Show("Cập nhật hàng hóa thành công!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadDSHH();
                 }
                 else
                     MessageBox.Show("hàng hóa này đã có!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
