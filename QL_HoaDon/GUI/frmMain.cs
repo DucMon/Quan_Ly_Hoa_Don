@@ -93,5 +93,15 @@ namespace QL_HoaDon.GUI
         {
             btnClose.Size = new Size(159, 44);
         }
+
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmNhapHoaDon.BringToFront();
+        }
     }
 }

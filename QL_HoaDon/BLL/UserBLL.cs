@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 
 namespace QL_HoaDon.BLL
 {
-    class HoaDonBLL
+    class UserBLL
     {
-        public static DataTable LayDSHD()
+        private UserDAL userDAL;
+        public UserBLL()
         {
-            DataTable dt = HoaDonDAL.LayDSHD();
-            return dt;
+            userDAL = new UserDAL();
         }
-        public static bool ThemHD(HoaDon hd)
+        public static DataTable Verify()
         {
-            bool kq = HoaDonDAL.ThemHD(hd);
-            return kq;
+            DataTable dt = UserDAL.LayDSUser();
+            return dt;
         }
     }
 }

@@ -65,7 +65,7 @@ namespace QL_HoaDon
             }
             else
             {
-                DataTable _ds = HoaDonBLL.Verify();
+                DataTable _ds = UserBLL.Verify();
                 bool flag = false;
                 for (int i = 0; i < _ds.Rows.Count; i++)
                 {
