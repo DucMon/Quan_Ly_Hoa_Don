@@ -21,5 +21,9 @@ namespace QL_HoaDon.BLL
             bool kq = HoaDonDAL.ThemHD(hd);
             return kq;
         }
+        public static DataTable LoadDSHDbyDate(DateTime fromDate, DateTime toDate)
+        {
+            return HoaDonDAL.GetHDListByDate(fromDate, toDate);
+        }
     }
 }

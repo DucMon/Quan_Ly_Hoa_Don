@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QL_HoaDon.DAO
 {
@@ -14,19 +10,53 @@ namespace QL_HoaDon.DAO
         //Chuỗi kết nối
         private static String _connectionString = @"Data Source=.;Initial Catalog=QuanLyHoaDon;Integrated Security=True";
         //ExecuteQuery : Select
-        public static DataTable ExecuteQuery(String sql)
+        //public static DataTable ExecuteQuery(String sql)
+        //{
+        //    DataTable dt = new DataTable();
+        //    SqlConnection connect = new SqlConnection(_connectionString);
+        //    connect.Open();
+        //    SqlCommand command = connect.CreateCommand();
+        //    command.CommandText = sql;
+        //    SqlDataAdapter adapter = new SqlDataAdapter();
+        //    adapter.SelectCommand = command;
+        //    adapter.Fill(dt);
+        //    connect.Close();
+        //    return dt;
+        //}
+        public static DataTable ExecuteQuery(string query, object[] parameter = null)
         {
-            DataTable dt = new DataTable();
-            SqlConnection connect = new SqlConnection(_connectionString);
-            connect.Open();
-            SqlCommand command = connect.CreateCommand();
-            command.CommandText = sql;
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = command;
-            adapter.Fill(dt);
-            connect.Close();
-            return dt;
+            DataTable data = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                if (parameter != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+
+                adapter.Fill(data);
+
+                connection.Close();
+            }
+
+            return data;
         }
+
         //ExecuteNonQuery: Insert, Update, Delete
         public static bool ExecuteNonQuery(String sql)
         {

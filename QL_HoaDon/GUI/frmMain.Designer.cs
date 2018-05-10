@@ -38,6 +38,8 @@
             this.frmHome = new QL_HoaDon.Home_Control();
             this.frmNhapHangHoa1 = new QL_HoaDon.GUI.frmNhapHangHoa();
             this.frmNhapHoaDon = new QL_HoaDon.GUI.Nhap_Hoa_Don_control();
+            this.nhap_Hoa_Don_control1 = new QL_HoaDon.GUI.Nhap_Hoa_Don_control();
+            this.thongKeHoaDon_Control1 = new QL_HoaDon.GUI.ThongKeHoaDon_Control();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +54,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(212, 719);
             this.panel1.TabIndex = 0;
@@ -62,16 +64,10 @@
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-<<<<<<< HEAD
-            this.pictureBox1.Location = new System.Drawing.Point(20, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 164);
-=======
             this.pictureBox1.Location = new System.Drawing.Point(43, 47);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 65);
->>>>>>> fa7411e0660a087799097e873f82931902a50172
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -85,13 +81,9 @@
             this.btnClose.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnClose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-<<<<<<< HEAD
-            this.btnClose.Location = new System.Drawing.Point(0, 598);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnClose.Location = new System.Drawing.Point(0, 486);
->>>>>>> fa7411e0660a087799097e873f82931902a50172
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(212, 54);
             this.btnClose.TabIndex = 3;
@@ -110,13 +102,9 @@
             this.button3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-<<<<<<< HEAD
-            this.button3.Location = new System.Drawing.Point(0, 470);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.Location = new System.Drawing.Point(0, 382);
->>>>>>> fa7411e0660a087799097e873f82931902a50172
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(212, 54);
             this.button3.TabIndex = 2;
@@ -136,20 +124,16 @@
             this.button2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-<<<<<<< HEAD
-            this.button2.Location = new System.Drawing.Point(0, 342);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.Location = new System.Drawing.Point(0, 278);
->>>>>>> fa7411e0660a087799097e873f82931902a50172
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(212, 54);
             this.button2.TabIndex = 1;
             this.button2.Text = "                                                                                 " +
     "  Nhập hóa đơn";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
@@ -162,13 +146,9 @@
             this.button1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-<<<<<<< HEAD
-            this.button1.Location = new System.Drawing.Point(0, 214);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(0, 174);
->>>>>>> fa7411e0660a087799097e873f82931902a50172
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 54);
             this.button1.TabIndex = 0;
@@ -199,11 +179,27 @@
             // 
             // frmNhapHoaDon
             // 
-            this.frmNhapHoaDon.Location = new System.Drawing.Point(159, 0);
+            this.frmNhapHoaDon.Location = new System.Drawing.Point(212, 0);
             this.frmNhapHoaDon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.frmNhapHoaDon.Name = "frmNhapHoaDon";
-            this.frmNhapHoaDon.Size = new System.Drawing.Size(729, 583);
+            this.frmNhapHoaDon.Size = new System.Drawing.Size(972, 719);
             this.frmNhapHoaDon.TabIndex = 3;
+            // 
+            // nhap_Hoa_Don_control1
+            // 
+            this.nhap_Hoa_Don_control1.Location = new System.Drawing.Point(212, 0);
+            this.nhap_Hoa_Don_control1.Margin = new System.Windows.Forms.Padding(4);
+            this.nhap_Hoa_Don_control1.Name = "nhap_Hoa_Don_control1";
+            this.nhap_Hoa_Don_control1.Size = new System.Drawing.Size(972, 719);
+            this.nhap_Hoa_Don_control1.TabIndex = 5;
+            // 
+            // thongKeHoaDon_Control1
+            // 
+            this.thongKeHoaDon_Control1.Location = new System.Drawing.Point(212, 0);
+            this.thongKeHoaDon_Control1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.thongKeHoaDon_Control1.Name = "thongKeHoaDon_Control1";
+            this.thongKeHoaDon_Control1.Size = new System.Drawing.Size(972, 719);
+            this.thongKeHoaDon_Control1.TabIndex = 6;
             // 
             // frmMain
             // 
@@ -215,8 +211,10 @@
             this.Controls.Add(this.frmHome);
             this.Controls.Add(this.frmNhapHangHoa1);
             this.Controls.Add(this.frmNhapHoaDon);
+            this.Controls.Add(this.thongKeHoaDon_Control1);
+            this.Controls.Add(this.nhap_Hoa_Don_control1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
@@ -238,5 +236,7 @@
         private frmNhapHangHoa frmNhapHangHoa1;
         private Home_Control frmHome;
         private Nhap_Hoa_Don_control frmNhapHoaDon;
+        private Nhap_Hoa_Don_control nhap_Hoa_Don_control1;
+        private ThongKeHoaDon_Control thongKeHoaDon_Control1;
     }
 }

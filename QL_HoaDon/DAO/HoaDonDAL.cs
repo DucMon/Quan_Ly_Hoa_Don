@@ -22,5 +22,10 @@ namespace QL_HoaDon.DAO
             bool kq = DBConnection.ExecuteNonQuery(sql);
             return kq;
         }
+
+        public static DataTable GetHDListByDate(DateTime fromDate, DateTime toDate)
+        {
+            return DBConnection.ExecuteQuery("exec USP_GetHDByDate @fromDate , @toDate", new object[] { fromDate, toDate });
+        }
     }
 }
