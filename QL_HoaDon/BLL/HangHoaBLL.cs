@@ -36,6 +36,5 @@ namespace QL_HoaDon.BLL
             DataTable kq = HangHoaDAL.TraCuuHHTheoTen(keyword);
             return kq;
         }
-
     }
 }

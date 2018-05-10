@@ -61,11 +61,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\HangHoaBLL.cs" />
+    <Compile Include="BLL\HangHoaTTBLL.cs" />
     <Compile Include="BLL\HoaDonBLL.cs" />
+    <Compile Include="BLL\UserBLL.cs" />
     <Compile Include="DAO\DBConnection.cs" />
     <Compile Include="DAO\HangHoaDAL.cs" />
+    <Compile Include="DAO\HangHoaTrucTiepDAL.cs" />
     <Compile Include="DAO\HoaDonDAL.cs" />
+    <Compile Include="DAO\UserDAL.cs" />
+    <Compile Include="DTO\DVMH.cs" />
     <Compile Include="DTO\HangHoa.cs" />
+    <Compile Include="DTO\HangHoaTrucTiep.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\User.cs" />
     <Compile Include="GUI\GradientPanel.cs">
       <SubType>Component</SubType>
@@ -100,6 +107,12 @@
     <Compile Include="GUI\Nhap_Hang_Hoa-Control.Designer.cs">
       <DependentUpon>Nhap_Hang_Hoa-Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Nhap_Hoa_Don-Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Nhap_Hoa_Don-Control.Designer.cs">
+      <DependentUpon>Nhap_Hoa_Don-Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\GradientPanel.resx">
@@ -119,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Nhap_Hang_Hoa-Control.resx">
       <DependentUpon>Nhap_Hang_Hoa-Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Nhap_Hoa_Don-Control.resx">
+      <DependentUpon>Nhap_Hoa_Don-Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -11,15 +11,15 @@ namespace QL_HoaDon.BLL
 {
     class HoaDonBLL
     {
-        private HoaDonDAL hoadonDAL;
-        public HoaDonBLL()
+        public static DataTable LayDSHD()
         {
-            hoadonDAL = new HoaDonDAL();
-        }
-        public static DataTable Verify()
-        {
-            DataTable dt = HoaDonDAL.LayDSUser();
+            DataTable dt = HoaDonDAL.LayDSHD();
             return dt;
+        }
+        public static bool ThemHD(HoaDon hd)
+        {
+            bool kq = HoaDonDAL.ThemHD(hd);
+            return kq;
         }
     }
 }
