@@ -147,7 +147,6 @@
     <EmbeddedResource Include="GUI\ThongKeHoaDon_Control.resx">
       <DependentUpon>ThongKeHoaDon_Control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

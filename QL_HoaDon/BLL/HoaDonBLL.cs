@@ -25,5 +25,14 @@ namespace QL_HoaDon.BLL
         {
             return HoaDonDAL.GetHDListByDate(fromDate, toDate);
         }
+        public static DataTable LoadCustomer()
+        {
+            return HoaDonDAL.GetCustomer();
+        }
+        public static DataTable LoadDSHDbyCustomer(string Name)
+        {
+            return HoaDonDAL.GetHDListByCustomer(Name);
+        }
+
     }
 }

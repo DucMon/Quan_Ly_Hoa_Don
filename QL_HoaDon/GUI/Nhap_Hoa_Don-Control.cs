@@ -25,6 +25,7 @@ namespace QL_HoaDon.GUI
             dgvHoaDon.DataSource = _dshd;
         }
 
+
         private void label5_Click(object sender, EventArgs e)
         {
 

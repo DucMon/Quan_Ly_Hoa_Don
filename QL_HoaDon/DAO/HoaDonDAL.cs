@@ -27,5 +27,15 @@ namespace QL_HoaDon.DAO
         {
             return DBConnection.ExecuteQuery("exec USP_GetHDByDate @fromDate , @toDate", new object[] { fromDate, toDate });
         }
+        public static DataTable GetCustomer()
+        {
+            return DBConnection.ExecuteQuery("SELECT DISTINCT NguoiMuaHang FROM dbo.HoaDonBan");
+        }
+
+        public static DataTable GetHDListByCustomer(string name)
+        {
+            return DBConnection.ExecuteQuery("exec USP_GetDSbyCustomer @NameCustomer", new object[] { name });
+        }
+
     }
 }

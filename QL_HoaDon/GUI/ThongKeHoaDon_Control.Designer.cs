@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongKeHoaDon_Control));
             this.tctTKHD = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.cbGetCustomer = new System.Windows.Forms.ComboBox();
             this.btnSearchuser = new DevExpress.XtraEditors.SimpleButton();
             this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.btnSearchdtd = new DevExpress.XtraEditors.SimpleButton();
-            this.cbByCustomer = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -44,10 +44,10 @@
             this.cbFromdate = new DevExpress.XtraEditors.DateEdit();
             this.cbTodate = new DevExpress.XtraEditors.DateEdit();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tctTKHD)).BeginInit();
             this.tctTKHD.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbByCustomer.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongKe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbFromdate.Properties.CalendarTimeProperties)).BeginInit();
@@ -58,7 +58,7 @@
             // 
             // tctTKHD
             // 
-            this.tctTKHD.Location = new System.Drawing.Point(3, 3);
+            this.tctTKHD.Location = new System.Drawing.Point(0, 0);
             this.tctTKHD.Name = "tctTKHD";
             this.tctTKHD.SelectedTabPage = this.xtraTabPage1;
             this.tctTKHD.Size = new System.Drawing.Size(966, 713);
@@ -69,10 +69,11 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.labelControl5);
+            this.xtraTabPage1.Controls.Add(this.cbGetCustomer);
             this.xtraTabPage1.Controls.Add(this.btnSearchuser);
             this.xtraTabPage1.Controls.Add(this.btnRefresh);
             this.xtraTabPage1.Controls.Add(this.btnSearchdtd);
-            this.xtraTabPage1.Controls.Add(this.cbByCustomer);
             this.xtraTabPage1.Controls.Add(this.labelControl4);
             this.xtraTabPage1.Controls.Add(this.labelControl3);
             this.xtraTabPage1.Controls.Add(this.labelControl2);
@@ -85,6 +86,14 @@
             this.xtraTabPage1.Text = "Thống Kê Hóa Đơn";
             this.xtraTabPage1.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage1_Paint);
             // 
+            // cbGetCustomer
+            // 
+            this.cbGetCustomer.FormattingEnabled = true;
+            this.cbGetCustomer.Location = new System.Drawing.Point(4, 227);
+            this.cbGetCustomer.Name = "cbGetCustomer";
+            this.cbGetCustomer.Size = new System.Drawing.Size(166, 24);
+            this.cbGetCustomer.TabIndex = 5;
+            // 
             // btnSearchuser
             // 
             this.btnSearchuser.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchuser.ImageOptions.Image")));
@@ -93,6 +102,7 @@
             this.btnSearchuser.Name = "btnSearchuser";
             this.btnSearchuser.Size = new System.Drawing.Size(66, 22);
             this.btnSearchuser.TabIndex = 4;
+            this.btnSearchuser.Click += new System.EventHandler(this.btnSearchuser_Click);
             // 
             // btnRefresh
             // 
@@ -102,6 +112,7 @@
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(89, 46);
             this.btnRefresh.TabIndex = 4;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnSearchdtd
             // 
@@ -112,15 +123,6 @@
             this.btnSearchdtd.Size = new System.Drawing.Size(89, 46);
             this.btnSearchdtd.TabIndex = 4;
             this.btnSearchdtd.Click += new System.EventHandler(this.btnSearchdtd_Click);
-            // 
-            // cbByCustomer
-            // 
-            this.cbByCustomer.Location = new System.Drawing.Point(3, 231);
-            this.cbByCustomer.Name = "cbByCustomer";
-            this.cbByCustomer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbByCustomer.Size = new System.Drawing.Size(167, 22);
-            this.cbByCustomer.TabIndex = 3;
             // 
             // labelControl4
             // 
@@ -156,10 +158,10 @@
             // 
             // dtgvThongKe
             // 
-            this.dtgvThongKe.Location = new System.Drawing.Point(248, 3);
+            this.dtgvThongKe.Location = new System.Drawing.Point(248, 40);
             this.dtgvThongKe.MainView = this.gridView1;
             this.dtgvThongKe.Name = "dtgvThongKe";
-            this.dtgvThongKe.Size = new System.Drawing.Size(711, 672);
+            this.dtgvThongKe.Size = new System.Drawing.Size(711, 638);
             this.dtgvThongKe.TabIndex = 0;
             this.dtgvThongKe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -169,6 +171,7 @@
             // 
             this.gridView1.GridControl = this.dtgvThongKe;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // cbFromdate
             // 
@@ -209,6 +212,18 @@
             this.xtraTabPage2.Size = new System.Drawing.Size(959, 678);
             this.xtraTabPage2.Text = "Report";
             // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(420, 3);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(345, 33);
+            this.labelControl5.TabIndex = 6;
+            this.labelControl5.Text = "Hóa Đơn Giá Trị Gia Tăng";
+            // 
             // ThongKeHoaDon_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -222,7 +237,6 @@
             this.tctTKHD.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbByCustomer.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongKe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbFromdate.Properties.CalendarTimeProperties)).EndInit();
@@ -241,7 +255,6 @@
         private DevExpress.XtraEditors.SimpleButton btnSearchuser;
         private DevExpress.XtraEditors.SimpleButton btnRefresh;
         private DevExpress.XtraEditors.SimpleButton btnSearchdtd;
-        private DevExpress.XtraEditors.ComboBoxEdit cbByCustomer;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
@@ -250,5 +263,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.DateEdit cbFromdate;
         private DevExpress.XtraEditors.DateEdit cbTodate;
+        private System.Windows.Forms.ComboBox cbGetCustomer;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
     }
 }

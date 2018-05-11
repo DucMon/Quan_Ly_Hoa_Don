@@ -3,6 +3,7 @@ using QL_HoaDon.BLL;
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
 using System.Linq;
 
 namespace QL_HoaDon.GUI
@@ -19,31 +20,6 @@ namespace QL_HoaDon.GUI
         }
         void bbiPrintPreview_ItemClick(object sender, ItemClickEventArgs e)
         {
-        }
-        public BindingList<Customer> GetDataSource()
-        {
-            BindingList<Customer> result = new BindingList<Customer>();
-            result.Add(new Customer()
-            {
-                ID = 1,
-                Name = "ACME",
-                Address = "2525 E El Segundo Blvd",
-                City = "El Segundo",
-                State = "CA",
-                ZipCode = "90245",
-                Phone = "(310) 536-0611"
-            });
-            result.Add(new Customer()
-            {
-                ID = 2,
-                Name = "Electronics Depot",
-                Address = "2455 Paces Ferry Road NW",
-                City = "Atlanta",
-                State = "GA",
-                ZipCode = "30339",
-                Phone = "(800) 595-3232"
-            });
-            return result;
         }
         public class Customer
         {
@@ -81,6 +57,32 @@ namespace QL_HoaDon.GUI
 
         private void ThongKeHoaDon_Control_Load(object sender, EventArgs e)
         {
+            LoadDSHD();
+            LoadCustomer();
+        }
+        void LoadCustomer()
+        {
+            cbGetCustomer.DataSource = HoaDonBLL.LoadCustomer();
+            cbGetCustomer.DisplayMember = "NguoiMuaHang";
+        }
+
+        private void btnSearchuser_Click(object sender, EventArgs e)
+        {
+            LoadDSHDbyCustomer(cbGetCustomer.Text);
+        }
+        void LoadDSHDbyCustomer(string name)
+        {
+            dtgvThongKe.DataSource = HoaDonBLL.LoadDSHDbyCustomer(name);
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadDSHD();
+        }
+        void LoadDSHD()
+        {
+            DataTable _dshd = HoaDonBLL.LayDSHD();
+            dtgvThongKe.DataSource = _dshd;
         }
     }
 }
