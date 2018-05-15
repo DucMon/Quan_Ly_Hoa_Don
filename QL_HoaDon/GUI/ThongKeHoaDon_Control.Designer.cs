@@ -35,7 +35,6 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.cbGetCustomer = new System.Windows.Forms.ComboBox();
             this.btnSearchuser = new DevExpress.XtraEditors.SimpleButton();
-            this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.btnSearchdtd = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -46,6 +45,7 @@
             this.cbFromdate = new DevExpress.XtraEditors.DateEdit();
             this.cbTodate = new DevExpress.XtraEditors.DateEdit();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.resourcesComboBoxControl1 = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.hoaDonBanBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -56,7 +56,6 @@
             this.quanLyHoaDonDataSet = new QL_HoaDon.QuanLyHoaDonDataSet();
             this.hoaDonBanTableAdapter = new QL_HoaDon.QuanLyHoaDonDataSetTableAdapters.HoaDonBanTableAdapter();
             this.hoaDonBanTableAdapter1 = new QL_HoaDon.QuanLyHoaDonDataSetTableAdapters.HoaDonBanTableAdapter();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tctTKHD)).BeginInit();
             this.tctTKHD.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -92,7 +91,6 @@
             this.xtraTabPage1.Controls.Add(this.labelControl5);
             this.xtraTabPage1.Controls.Add(this.cbGetCustomer);
             this.xtraTabPage1.Controls.Add(this.btnSearchuser);
-            this.xtraTabPage1.Controls.Add(this.btnRefresh);
             this.xtraTabPage1.Controls.Add(this.btnSearchdtd);
             this.xtraTabPage1.Controls.Add(this.labelControl4);
             this.xtraTabPage1.Controls.Add(this.labelControl3);
@@ -104,7 +102,6 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(959, 678);
             this.xtraTabPage1.Text = "Thống Kê Hóa Đơn";
-            this.xtraTabPage1.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage1_Paint);
             // 
             // labelControl5
             // 
@@ -135,16 +132,6 @@
             this.btnSearchuser.Size = new System.Drawing.Size(66, 22);
             this.btnSearchuser.TabIndex = 4;
             this.btnSearchuser.Click += new System.EventHandler(this.btnSearchuser_Click);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ImageOptions.Image")));
-            this.btnRefresh.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
-            this.btnRefresh.Location = new System.Drawing.Point(153, 283);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(89, 46);
-            this.btnRefresh.TabIndex = 4;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnSearchdtd
             // 
@@ -197,7 +184,7 @@
             this.dtgvThongKe.TabIndex = 0;
             this.dtgvThongKe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.dtgvThongKe.Click += new System.EventHandler(this.gridControl1_Click);
+            this.dtgvThongKe.Click += new System.EventHandler(this.dtgvThongKe_Click);
             // 
             // gridView1
             // 
@@ -246,7 +233,16 @@
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(959, 678);
             this.xtraTabPage2.Text = "Report";
-            this.xtraTabPage2.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage2_Paint);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(262, 16);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(115, 50);
+            this.simpleButton1.TabIndex = 2;
+            this.simpleButton1.Text = "In Hóa Đơn";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // labelControl6
             // 
@@ -311,16 +307,6 @@
             // 
             this.hoaDonBanTableAdapter1.ClearBeforeFill = true;
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(262, 16);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(115, 50);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "In Hóa Đơn";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
             // ThongKeHoaDon_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -359,7 +345,6 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraEditors.SimpleButton btnSearchuser;
-        private DevExpress.XtraEditors.SimpleButton btnRefresh;
         private DevExpress.XtraEditors.SimpleButton btnSearchdtd;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;

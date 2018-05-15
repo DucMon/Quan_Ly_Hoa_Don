@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="17.2.3.0" Ref="1" ControlType="QL_HoaDon.GUI.XtraReport1, QL_HoaDon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Name="XtraReport1" Margins="100, 0, 490, 100" PageWidth="850" PageHeight="1100" Version="17.2" EventsInfo="XtraReport1,DataSourceDemanded,XtraReport1_DataSourceDemanded" DataMember="USP_GetHDbyID" DataSource="#Ref-0">
+  <Parameters>
+    <Item1 Ref="4" Visible="false" Description="SoHD:" LookUpSettings="#Ref-2" ValueInfo="1" Name="SoHD" Type="#Ref-3" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="5" ControlType="TopMarginBand" Name="topMarginBand1" HeightF="490" />
+    <Item2 Ref="6" ControlType="BottomMarginBand" Name="bottomMarginBand1" HeightF="100">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRPageInfo" Name="xrPageInfo1" PageInfo="DateTime" SizeF="315,23" LocationFloat="5, 5" StyleName="PageInfo" Padding="2,2,0,0,100" />
+        <Item2 Ref="8" ControlType="XRPageInfo" Name="xrPageInfo2" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="315,23" LocationFloat="330, 5" StyleName="PageInfo" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="9" ControlType="ReportHeaderBand" Name="reportHeaderBand1" HeightF="60">
+      <Controls>
+        <Item1 Ref="10" ControlType="XRLabel" Name="xrLabel1" Text="Hóa Đơn Bán Hàng" SizeF="640,26" LocationFloat="5, 5" StyleName="Title" Padding="2,2,0,0,100" />
+      </Controls>
+    </Item3>
+    <Item4 Ref="11" ControlType="GroupHeaderBand" Name="groupHeaderBand1" GroupUnion="WithFirstDetail" Level="1" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="12" FieldName="Tổng Tiền" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="13" ControlType="XRTable" Name="xrTable1" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="14" ControlType="XRTableRow" Name="xrTableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="15" ControlType="XRTableCell" Name="xrTableCell1" Weight="0.11076923076923077" Text="TỔNG TIỀN" StyleName="GroupCaption3" />
+                <Item2 Ref="16" ControlType="XRTableCell" Name="xrTableCell2" Weight="0.88923076923076927" Text="xrTableCell2" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="17" Expression="[Tổng Tiền]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="18" ControlType="GroupHeaderBand" Name="groupHeaderBand2" GroupUnion="WithFirstDetail" Level="2" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="19" FieldName="Hình Thức" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="20" ControlType="XRTable" Name="xrTable2" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="21" ControlType="XRTableRow" Name="xrTableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="22" ControlType="XRTableCell" Name="xrTableCell3" Weight="0.11384615384615385" Text="HÌNH THỨC" StyleName="GroupCaption3" />
+                <Item2 Ref="23" ControlType="XRTableCell" Name="xrTableCell4" Weight="0.88615384615384618" Text="xrTableCell4" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="24" Expression="[Hình Thức]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item5>
+    <Item6 Ref="25" ControlType="GroupHeaderBand" Name="groupHeaderBand3" GroupUnion="WithFirstDetail" Level="3" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="26" FieldName="NgàyXuất" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="27" ControlType="XRTable" Name="xrTable3" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="28" ControlType="XRTableRow" Name="xrTableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="29" ControlType="XRTableCell" Name="xrTableCell5" Weight="0.11384615384615385" Text="NGÀY XUẤT" StyleName="GroupCaption3" />
+                <Item2 Ref="30" ControlType="XRTableCell" Name="xrTableCell6" Weight="0.88615384615384618" Text="xrTableCell6" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" Expression="[NgàyXuất]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item6>
+    <Item7 Ref="32" ControlType="GroupHeaderBand" Name="groupHeaderBand4" GroupUnion="WithFirstDetail" Level="4" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="33" FieldName="Số TK" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="34" ControlType="XRTable" Name="xrTable4" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="35" ControlType="XRTableRow" Name="xrTableRow4" Weight="1">
+              <Cells>
+                <Item1 Ref="36" ControlType="XRTableCell" Name="xrTableCell7" Weight="0.064615384615384616" Text="SỐ TK" StyleName="GroupCaption3" />
+                <Item2 Ref="37" ControlType="XRTableCell" Name="xrTableCell8" Weight="0.93538461538461537" Text="xrTableCell8" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="38" Expression="[Số TK]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item7>
+    <Item8 Ref="39" ControlType="GroupHeaderBand" Name="groupHeaderBand5" GroupUnion="WithFirstDetail" Level="5" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="40" FieldName="Địa Chỉ" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="41" ControlType="XRTable" Name="xrTable5" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="42" ControlType="XRTableRow" Name="xrTableRow5" Weight="1">
+              <Cells>
+                <Item1 Ref="43" ControlType="XRTableCell" Name="xrTableCell9" Weight="0.08461538461538462" Text="ĐỊA CHỈ" StyleName="GroupCaption3" />
+                <Item2 Ref="44" ControlType="XRTableCell" Name="xrTableCell10" Weight="0.91538461538461535" Text="xrTableCell10" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="45" Expression="[Địa Chỉ]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item8>
+    <Item9 Ref="46" ControlType="GroupHeaderBand" Name="groupHeaderBand6" GroupUnion="WithFirstDetail" Level="6" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="47" FieldName="Mã Số Thuế" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="48" ControlType="XRTable" Name="xrTable6" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="49" ControlType="XRTableRow" Name="xrTableRow6" Weight="1">
+              <Cells>
+                <Item1 Ref="50" ControlType="XRTableCell" Name="xrTableCell11" Weight="0.12" Text="MÃ SỐ THUẾ" StyleName="GroupCaption3" />
+                <Item2 Ref="51" ControlType="XRTableCell" Name="xrTableCell12" Weight="0.88" Text="xrTableCell12" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="52" Expression="[Mã Số Thuế]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item9>
+    <Item10 Ref="53" ControlType="GroupHeaderBand" Name="groupHeaderBand7" GroupUnion="WithFirstDetail" Level="7" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="54" FieldName="Người Mua Hàng" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="55" ControlType="XRTable" Name="xrTable7" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="56" ControlType="XRTableRow" Name="xrTableRow7" Weight="1">
+              <Cells>
+                <Item1 Ref="57" ControlType="XRTableCell" Name="xrTableCell13" Weight="0.17538461538461539" Text="NGƯỜI MUA HÀNG" StyleName="GroupCaption3" />
+                <Item2 Ref="58" ControlType="XRTableCell" Name="xrTableCell14" Weight="0.82461538461538464" Text="xrTableCell14" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="59" Expression="[Người Mua Hàng]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item10>
+    <Item11 Ref="60" ControlType="GroupHeaderBand" Name="groupHeaderBand8" GroupUnion="WithFirstDetail" Level="8" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="61" FieldName=" Tên Đơn Vi Mua Hàng" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="62" ControlType="XRTable" Name="xrTable8" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="63" ControlType="XRTableRow" Name="xrTableRow8" Weight="1">
+              <Cells>
+                <Item1 Ref="64" ControlType="XRTableCell" Name="xrTableCell15" Weight="0.22307692307692309" Text=" TÊN ĐƠN VI MUA HÀNG" StyleName="GroupCaption3" />
+                <Item2 Ref="65" ControlType="XRTableCell" Name="xrTableCell16" Weight="0.77692307692307694" Text="xrTableCell16" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="66" Expression="[ Tên Đơn Vi Mua Hàng]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item11>
+    <Item12 Ref="67" ControlType="GroupHeaderBand" Name="groupHeaderBand9" GroupUnion="WithFirstDetail" Level="9" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="68" FieldName="Mã KH" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="69" ControlType="XRTable" Name="xrTable9" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="70" ControlType="XRTableRow" Name="xrTableRow9" Weight="1">
+              <Cells>
+                <Item1 Ref="71" ControlType="XRTableCell" Name="xrTableCell17" Weight="0.070769230769230765" Text="MÃ KH" StyleName="GroupCaption3" />
+                <Item2 Ref="72" ControlType="XRTableCell" Name="xrTableCell18" Weight="0.92923076923076919" Text="xrTableCell18" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="73" Expression="[Mã KH]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item12>
+    <Item13 Ref="74" ControlType="GroupHeaderBand" Name="groupHeaderBand10" GroupUnion="WithFirstDetail" Level="10" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="75" FieldName="Ký Hiệu" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="76" ControlType="XRTable" Name="xrTable10" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="77" ControlType="XRTableRow" Name="xrTableRow10" Weight="1">
+              <Cells>
+                <Item1 Ref="78" ControlType="XRTableCell" Name="xrTableCell19" Weight="0.08615384615384615" Text="KÝ HIỆU" StyleName="GroupCaption3" />
+                <Item2 Ref="79" ControlType="XRTableCell" Name="xrTableCell20" Weight="0.91384615384615386" Text="xrTableCell20" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="80" Expression="[Ký Hiệu]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item13>
+    <Item14 Ref="81" ControlType="GroupHeaderBand" Name="groupHeaderBand11" GroupUnion="WithFirstDetail" Level="11" HeightF="25">
+      <GroupFields>
+        <Item1 Ref="82" FieldName="Số Hóa Đơn" />
+      </GroupFields>
+      <Controls>
+        <Item1 Ref="83" ControlType="XRTable" Name="xrTable11" SizeF="650,25" LocationFloat="0, 0">
+          <Rows>
+            <Item1 Ref="84" ControlType="XRTableRow" Name="xrTableRow11" Weight="1">
+              <Cells>
+                <Item1 Ref="85" ControlType="XRTableCell" Name="xrTableCell21" Weight="0.12615384615384614" Text="SỐ HÓA ĐƠN" StyleName="GroupCaption3" />
+                <Item2 Ref="86" ControlType="XRTableCell" Name="xrTableCell22" Weight="0.87384615384615383" Text="xrTableCell22" StyleName="GroupData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="87" Expression="[Số Hóa Đơn]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item14>
+    <Item15 Ref="88" ControlType="GroupHeaderBand" Name="groupHeaderBand12" GroupUnion="WithFirstDetail" Level="12" HeightF="694.875061">
+      <Controls>
+        <Item1 Ref="89" ControlType="XRPanel" Name="xrPanel1" SizeF="650,48" LocationFloat="0, 0" StyleName="DetailCaptionBackground3">
+          <Controls>
+            <Item1 Ref="90" ControlType="XRTable" Name="xrTable12" SizeF="650,28" LocationFloat="0, 20">
+              <Rows>
+                <Item1 Ref="91" ControlType="XRTableRow" Name="xrTableRow12" Weight="1">
+                  <Cells>
+                    <Item1 Ref="92" ControlType="XRTableCell" Name="xrTableCell23" Weight="0.20805370624248798" Text="Mã Hàng" StyleName="DetailCaption3" />
+                    <Item2 Ref="93" ControlType="XRTableCell" Name="xrTableCell24" Weight="0.22147651085486778" Text="Tên Hàng" StyleName="DetailCaption3" />
+                    <Item3 Ref="94" ControlType="XRTableCell" Name="xrTableCell25" Weight="0.16107383141150841" Text="Đơn vị" StyleName="DetailCaption3" />
+                    <Item4 Ref="95" ControlType="XRTableCell" Name="xrTableCell26" Weight="0.21812082143930289" Text="Số Lượng" TextAlignment="MiddleRight" StyleName="DetailCaption3">
+                      <StylePriority Ref="96" UseTextAlignment="false" />
+                    </Item4>
+                    <Item5 Ref="97" ControlType="XRTableCell" Name="xrTableCell27" Weight="0.19127517700195312" Text="Đơn Giá" TextAlignment="MiddleRight" StyleName="DetailCaption3">
+                      <StylePriority Ref="98" UseTextAlignment="false" />
+                    </Item5>
+                  </Cells>
+                </Item1>
+              </Rows>
+            </Item1>
+          </Controls>
+        </Item1>
+      </Controls>
+    </Item15>
+    <Item16 Ref="99" ControlType="DetailBand" Name="detailBand1" HeightF="25">
+      <Controls>
+        <Item1 Ref="100" ControlType="XRTable" Name="xrTable13" SizeF="650,25" LocationFloat="0, 0" OddStyleName="DetailData3_Odd">
+          <Rows>
+            <Item1 Ref="101" ControlType="XRTableRow" Name="xrTableRow13" Weight="11.5">
+              <Cells>
+                <Item1 Ref="102" ControlType="XRTableCell" Name="xrTableCell28" Weight="0.20805370624248798" Text="xrTableCell28" StyleName="DetailData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="103" Expression="[Mã Hàng]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="104" ControlType="XRTableCell" Name="xrTableCell29" Weight="0.22147651085486778" Text="xrTableCell29" StyleName="DetailData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="105" Expression="[Tên Hàng]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="106" ControlType="XRTableCell" Name="xrTableCell30" Weight="0.16107381967397835" Text="xrTableCell30" StyleName="DetailData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="107" Expression="[Đơn vị]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="108" ControlType="XRTableCell" Name="xrTableCell31" Weight="0.21812082143930289" Text="xrTableCell31" TextAlignment="MiddleRight" StyleName="DetailData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="109" Expression="[Số Lượng]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="110" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="111" ControlType="XRTableCell" Name="xrTableCell32" Weight="0.19127516526442306" Text="xrTableCell32" TextAlignment="MiddleRight" StyleName="DetailData3">
+                  <ExpressionBindings>
+                    <Item1 Ref="112" Expression="[Đơn Giá]" PropertyName="Text" EventName="BeforePrint" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="113" UseTextAlignment="false" />
+                </Item5>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item16>
+    <Item17 Ref="114" ControlType="GroupFooterBand" Name="groupFooterBand1" GroupUnion="WithLastDetail" HeightF="6">
+      <Controls>
+        <Item1 Ref="115" ControlType="XRLabel" Name="xrLabel2" SizeF="650,2.08" LocationFloat="0, 0" StyleName="GroupCaption3" Padding="2,2,0,0,100" Borders="None">
+          <StylePriority Ref="116" UseBorders="false" />
+        </Item1>
+      </Controls>
+    </Item17>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="117" Name="Title" BorderStyle="Inset" Font="Tahoma, 14pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="118" Name="GroupCaption3" BorderStyle="Inset" Padding="6,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,228,228,228" BackColor="255,137,137,137" BorderColor="White" Sides="Bottom" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="119" Name="GroupData3" BorderStyle="Inset" Padding="6,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="White" BackColor="255,137,137,137" BorderColor="White" Sides="Bottom" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="120" Name="DetailCaption3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item5 Ref="121" Name="DetailData3" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" />
+    <Item6 Ref="122" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Tahoma, 8pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item7 Ref="123" Name="DetailCaptionBackground3" BorderStyle="Inset" BackColor="Transparent" BorderColor="255,206,206,206" Sides="Top" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="2" />
+    <Item8 Ref="124" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Tahoma, 8pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v17.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2U+PE5hbWU+c3FsRGF0YVNvdXJjZTE8L05hbWU+PENvbm5lY3Rpb24gTmFtZT0ibG9jYWxob3N0X1F1YW5MeUhvYURvbl9Db25uZWN0aW9uIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9IlVTUF9HZXRIRGJ5SUQiPjxQcm9jTmFtZT5VU1BfR2V0SERieUlEPC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlVTUF9HZXRIRGJ5SUQiPjxGaWVsZCBOYW1lPSJT4buRIEjDs2EgxJDGoW4iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJLw70gSGnhu4d1IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik3DoyBLSCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSIgVMOqbiDEkMahbiBWaSBNdWEgSMOgbmciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iTmfGsOG7nWkgTXVhIEjDoG5nIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik3DoyBT4buRIFRodeG6vyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLEkOG7i2EgQ2jhu4kiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iU+G7kSBUSyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJOZ8OgeVh14bqldCIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkjDrG5oIFRo4bupYyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlThu5VuZyBUaeG7gW4iIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0iTcOjIEjDoG5nIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlTDqm4gSMOgbmciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ixJDGoW4gduG7iyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJT4buRIEzGsOG7o25nIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0ixJDGoW4gR2nDoSIgVHlwZT0iRG91YmxlIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 Ref="2" ObjectType="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings, DevExpress.Printing.v17.2.Core" DataSource="#Ref-0" DataMember="USP_GetHDbyID" ValueMember="Số Hóa Đơn" DisplayMember="Số Hóa Đơn" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v17.2" Ref="3" Content="System.Int32" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

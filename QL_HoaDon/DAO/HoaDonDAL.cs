@@ -12,9 +12,7 @@ namespace QL_HoaDon.DAO
     {
         public static DataTable LayDSHD()
         {
-            string sql = "select * from HoaDonBan";
-            DataTable dt = DBConnection.ExecuteQuery(sql);
-            return dt;
+            return DBConnection.ExecuteQuery("select * from HoaDonBan");
         }
         public static bool ThemHD(HoaDon hd)
         {

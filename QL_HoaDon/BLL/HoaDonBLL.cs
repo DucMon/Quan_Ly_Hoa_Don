@@ -13,8 +13,7 @@ namespace QL_HoaDon.BLL
     {
         public static DataTable LayDSHD()
         {
-            DataTable dt = HoaDonDAL.LayDSHD();
-            return dt;
+            return HoaDonDAL.LayDSHD();
         }
         public static bool ThemHD(HoaDon hd)
         {
