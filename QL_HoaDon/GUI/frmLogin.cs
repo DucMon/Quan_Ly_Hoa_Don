@@ -129,35 +129,5 @@ namespace QL_HoaDon
         {
             Application.Exit();
         }
-
-        private void panel2_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-        }
-
-        private void textBox2_KeyDown(object sender, KeyEventArgs e)
-        {
-            if(e.KeyCode==Keys.Enter)
-            {
-                button1.PerformClick();
-                e.SuppressKeyPress = true;
-                e.Handled = true;
-            }
-        }
-
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                button1.PerformClick();
-                e.SuppressKeyPress = true;
-                e.Handled = true;
-            }
-        }
     }
 }

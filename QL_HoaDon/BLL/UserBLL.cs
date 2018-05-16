@@ -21,6 +21,5 @@ namespace QL_HoaDon.BLL
             DataTable dt = UserDAL.LayDSUser();
             return dt;
         }
-
     }
 }

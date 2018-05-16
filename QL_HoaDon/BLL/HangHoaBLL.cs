@@ -3,6 +3,7 @@ using QL_HoaDon.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,11 @@ namespace QL_HoaDon.BLL
         public static DataTable LayDSHH()
         {
             DataTable dt = HangHoaDAL.LayDSHH();
+            return dt;
+        }
+        public static List<String> LayListHH()
+        {
+            List<String> dt = HangHoaDAL.LayListHH();
             return dt;
         }
         public static bool UpdateHH(HangHoa hh)
@@ -36,6 +42,10 @@ namespace QL_HoaDon.BLL
             DataTable kq = HangHoaDAL.TraCuuHHTheoTen(keyword);
             return kq;
         }
-
+        public static DataTable LayDuLieuChoTB(string maHH)
+        {
+            DataTable dt = HangHoaDAL.LayDuLieuChoTB(maHH);
+            return dt;
+        }
     }
 }

@@ -18,7 +18,6 @@ namespace QL_HoaDon.GUI
         {
             Thread t = new Thread(new ThreadStart(StartForm));
             t.Start();
-            Thread.Sleep(1000);
             InitializeComponent();
             t.Abort();
         }
@@ -34,12 +33,12 @@ namespace QL_HoaDon.GUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            thongKeHoaDon_Control1.BringToFront();
+
         }
 
         private void frmNhapHangHoa1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -86,6 +85,16 @@ namespace QL_HoaDon.GUI
         }
         private void button4_MouseHover(object sender, EventArgs e)
         {
+            btnClose.Size = new Size(159, 48);
+            Thread.Sleep(700);
+            btnClose.Size = new Size(159, 58);
+            Thread.Sleep(50);
+            btnClose.Size = new Size(159, 68);
+            Thread.Sleep(560);
+            btnClose.Size = new Size(159, 78);
+            Thread.Sleep(50);
+            btnClose.Size = new Size(159, 88);
+            Thread.Sleep(50);
             btnClose.Size = new Size(159, 98);
         }
 
@@ -94,18 +103,12 @@ namespace QL_HoaDon.GUI
             btnClose.Size = new Size(159, 44);
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //frmNhapHoaDon.BringToFront();
-        }
-
         private void frmHome_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             frmNhapHoaDon.BringToFront();
         }
