@@ -311,3 +311,6 @@ E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\ru\Dev
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.csproj.CopyComplete
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.exe
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.pdb
+D:\Git\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\QL_HoaDon.exe.config
+D:\Git\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.exe
+D:\Git\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.pdb
