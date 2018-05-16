@@ -167,6 +167,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyHoaDonDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyHoaDonDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyHoaDonDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\GradientPanel.resx">
       <DependentUpon>GradientPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +232,17 @@
     </None>
     <None Include="QuanLyHoaDonDataSet.xss">
       <DependentUpon>QuanLyHoaDonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyHoaDonDataSet1.xsc">
+      <DependentUpon>QuanLyHoaDonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyHoaDonDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyHoaDonDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyHoaDonDataSet1.xss">
+      <DependentUpon>QuanLyHoaDonDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

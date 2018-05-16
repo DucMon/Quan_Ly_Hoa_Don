@@ -96,20 +96,6 @@ C:\Users\Kim\Desktop\Quan_Ly_Hoa_Don-master\QL_HoaDon\obj\Debug\QL_HoaDon.csproj
 C:\Users\Kim\Desktop\Quan_Ly_Hoa_Don-master\QL_HoaDon\obj\Debug\QL_HoaDon.exe
 C:\Users\Kim\Desktop\Quan_Ly_Hoa_Don-master\QL_HoaDon\obj\Debug\QL_HoaDon.pdb
 C:\Users\Kim\Desktop\Quan_Ly_Hoa_Don-master\QL_HoaDon\obj\Debug\QL_HoaDon.exe.licenses
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GradientPanel.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.frmLazyLoading.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.frmLogin.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.frmMain.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.Home_Control.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.frmNhapHangHoa.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.Nhap_Hoa_Don_control.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.ReportDesigner.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.ThongKeHoaDon_Control.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.XtraReport1.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.Properties.Resources.resources
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.csproj.GenerateResource.cache
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.exe.licenses
-E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.csproj.CoreCompileInputs.cache
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\QL_HoaDon.exe.config
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\QL_HoaDon.exe
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\QL_HoaDon.pdb
@@ -308,6 +294,19 @@ E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\de\Dev
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\es\DevExpress.Diagram.v17.2.Core.resources.dll
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\ja\DevExpress.Diagram.v17.2.Core.resources.dll
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\bin\Debug\ru\DevExpress.Diagram.v17.2.Core.resources.dll
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GradientPanel.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.frmLazyLoading.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.frmLogin.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.frmMain.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.Home_Control.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.frmNhapHangHoa.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.Nhap_Hoa_Don_control.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.ReportDesigner.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.ThongKeHoaDon_Control.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.GUI.XtraReport1.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.Properties.Resources.resources
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.csproj.GenerateResource.cache
+E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.csproj.CoreCompileInputs.cache
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.csproj.CopyComplete
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.exe
 E:\baitap\lap trinh windows\Đồ Án\Quan_Ly_Hoa_Don\QL_HoaDon\obj\Debug\QL_HoaDon.pdb

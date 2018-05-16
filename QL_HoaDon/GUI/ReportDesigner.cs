@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.DataAccess.Sql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace QL_HoaDon.GUI
         public ReportDesigner()
         {
             InitializeComponent();
+            SqlDataSource.DisableCustomQueryValidation = true;
         }
     }
 }
