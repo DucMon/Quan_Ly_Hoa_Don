@@ -37,7 +37,7 @@ namespace QL_HoaDon.DAO
         }
         public static bool UpdateHH(HangHoa hh)
         {
-            string sql = string.Format("UPDATE DMHangHoa SET TenHang = '" +hh.TenHang+ "', DVT = '" + hh.DVT + "' , DonGia = '" + hh.DonGia + "',GhiChu = '" + hh.GhiChu + "'WHERE MaHang = '" + hh.MaHang +"'");
+            string sql = string.Format("UPDATE DMHangHoa SET TenHang = '" +hh.TenHang+ "', DVT = '" + hh.DVT + "' , DonGia = " +hh.DonGia+  ", GhiChu = '" + hh.GhiChu + "'WHERE MaHang = '" + hh.MaHang +"'");
             bool kq = DBConnection.ExecuteNonQuery(sql);
             return kq;
         }

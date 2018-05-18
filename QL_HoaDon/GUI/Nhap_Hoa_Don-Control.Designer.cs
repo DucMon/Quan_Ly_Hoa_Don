@@ -87,12 +87,14 @@
             this.label26 = new System.Windows.Forms.Label();
             this.tbCTH = new System.Windows.Forms.TextBox();
             this.tbTTGTGT = new System.Windows.Forms.TextBox();
-            this.tbTCTTT = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
+            this.lbTCTTT = new System.Windows.Forms.Label();
+            this.tbTCTTT = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
             this.panel2.SuspendLayout();
@@ -709,36 +711,39 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label24.Location = new System.Drawing.Point(427, 548);
+            this.label24.Location = new System.Drawing.Point(427, 543);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(138, 16);
             this.label24.TabIndex = 35;
             this.label24.Text = "Tổng Cộng Tiền TT";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label25.Location = new System.Drawing.Point(427, 530);
+            this.label25.Location = new System.Drawing.Point(427, 525);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(117, 16);
             this.label25.TabIndex = 34;
             this.label25.Text = "Tiền Thuế GTGT";
+            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label26.Location = new System.Drawing.Point(427, 514);
+            this.label26.Location = new System.Drawing.Point(427, 509);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(121, 16);
             this.label26.TabIndex = 33;
             this.label26.Text = "Cộng Tiền Hàng";
+            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // tbCTH
             // 
             this.tbCTH.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbCTH.Location = new System.Drawing.Point(575, 516);
+            this.tbCTH.Location = new System.Drawing.Point(575, 511);
             this.tbCTH.Name = "tbCTH";
             this.tbCTH.ReadOnly = true;
             this.tbCTH.Size = new System.Drawing.Size(151, 13);
@@ -749,27 +754,13 @@
             // tbTTGTGT
             // 
             this.tbTTGTGT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTTGTGT.Location = new System.Drawing.Point(575, 532);
+            this.tbTTGTGT.Location = new System.Drawing.Point(575, 527);
             this.tbTTGTGT.Name = "tbTTGTGT";
             this.tbTTGTGT.ReadOnly = true;
             this.tbTTGTGT.Size = new System.Drawing.Size(151, 13);
             this.tbTTGTGT.TabIndex = 46;
             this.tbTTGTGT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // tbTCTTT
-            // 
-            this.tbTCTTT.BackColor = System.Drawing.Color.White;
-            this.tbTCTTT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTCTTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.tbTCTTT.ForeColor = System.Drawing.Color.Red;
-            this.tbTCTTT.Location = new System.Drawing.Point(575, 548);
-            this.tbTCTTT.Name = "tbTCTTT";
-            this.tbTCTTT.ReadOnly = true;
-            this.tbTCTTT.Size = new System.Drawing.Size(151, 15);
-            this.tbTCTTT.TabIndex = 47;
-            this.tbTCTTT.Text = "0";
-            this.tbTCTTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tbTCTTT.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
+            this.tbTTGTGT.TextChanged += new System.EventHandler(this.tbTTGTGT_TextChanged);
             // 
             // flowLayoutPanel2
             // 
@@ -777,9 +768,10 @@
             this.flowLayoutPanel2.Controls.Add(this.btnDel);
             this.flowLayoutPanel2.Controls.Add(this.btnUpdate);
             this.flowLayoutPanel2.Controls.Add(this.btnCancel);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(15, 514);
+            this.flowLayoutPanel2.Controls.Add(this.label28);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(21, 515);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(378, 52);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(228, 52);
             this.flowLayoutPanel2.TabIndex = 49;
             // 
             // btnAdd
@@ -788,7 +780,7 @@
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.Location = new System.Drawing.Point(3, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(88, 49);
+            this.btnAdd.Size = new System.Drawing.Size(51, 49);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -797,9 +789,9 @@
             // 
             this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
-            this.btnDel.Location = new System.Drawing.Point(97, 3);
+            this.btnDel.Location = new System.Drawing.Point(60, 3);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(88, 49);
+            this.btnDel.Size = new System.Drawing.Size(51, 49);
             this.btnDel.TabIndex = 5;
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
@@ -808,9 +800,9 @@
             // 
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(191, 3);
+            this.btnUpdate.Location = new System.Drawing.Point(117, 3);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(88, 49);
+            this.btnUpdate.Size = new System.Drawing.Size(51, 49);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -819,17 +811,54 @@
             // 
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(285, 3);
+            this.btnCancel.Location = new System.Drawing.Point(174, 3);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 49);
+            this.btnCancel.Size = new System.Drawing.Size(51, 49);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(3, 55);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(41, 13);
+            this.label28.TabIndex = 8;
+            this.label28.Text = "label28";
+            // 
+            // lbTCTTT
+            // 
+            this.lbTCTTT.AutoSize = true;
+            this.lbTCTTT.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbTCTTT.ForeColor = System.Drawing.Color.Red;
+            this.lbTCTTT.Location = new System.Drawing.Point(285, 561);
+            this.lbTCTTT.Name = "lbTCTTT";
+            this.lbTCTTT.Size = new System.Drawing.Size(93, 16);
+            this.lbTCTTT.TabIndex = 50;
+            this.lbTCTTT.Text = "Không đồng";
+            this.lbTCTTT.Click += new System.EventHandler(this.label29_Click);
+            // 
+            // tbTCTTT
+            // 
+            this.tbTCTTT.BackColor = System.Drawing.Color.White;
+            this.tbTCTTT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTCTTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tbTCTTT.ForeColor = System.Drawing.Color.Red;
+            this.tbTCTTT.Location = new System.Drawing.Point(575, 543);
+            this.tbTCTTT.Name = "tbTCTTT";
+            this.tbTCTTT.ReadOnly = true;
+            this.tbTCTTT.Size = new System.Drawing.Size(151, 15);
+            this.tbTCTTT.TabIndex = 47;
+            this.tbTCTTT.Text = "0";
+            this.tbTCTTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbTCTTT.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
             // 
             // Nhap_Hoa_Don_control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbTCTTT);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.tbCTH);
             this.Controls.Add(this.tbTTGTGT);
@@ -858,6 +887,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHHTT)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -915,7 +945,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox tbCTH;
         private System.Windows.Forms.TextBox tbTTGTGT;
-        private System.Windows.Forms.TextBox tbTCTTT;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -929,5 +958,8 @@
         private DevExpress.XtraEditors.LookUpEdit comboBoxDVM;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label lbTCTTT;
+        private System.Windows.Forms.TextBox tbTCTTT;
     }
 }
