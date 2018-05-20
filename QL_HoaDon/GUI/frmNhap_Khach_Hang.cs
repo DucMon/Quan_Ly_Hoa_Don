@@ -59,35 +59,43 @@ namespace QL_HoaDon.GUI
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            int rowindex = dgvKH.CurrentCell.RowIndex;
-            string rs = dgvKH.Rows[rowindex].Cells[0].Value.ToString();
             try
             {
-                DialogResult result = MessageBox.Show("Chắn chắn xóa?!!!", "Cảnh Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, false);
-                if (result == DialogResult.Yes)
+                int rowindex = dgvKH.CurrentCell.RowIndex;
+                string rs = dgvKH.Rows[rowindex].Cells[0].Value.ToString();
+                try
                 {
-                    bool kq1;
-                    try
+                    DialogResult result = MessageBox.Show("Chắn chắn xóa?!!!", "Cảnh Báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign, false);
+                    if (result == DialogResult.Yes)
                     {
-                        kq1 = DVMHBLL.XoaKHTheoMa(rs);
-                        if (kq1 == true)
+                        bool kq1;
+                        try
                         {
-                            MessageBox.Show("Xóa thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            kq1 = DVMHBLL.XoaKHTheoMa(rs);
+                            if (kq1 == true)
+                            {
+                                MessageBox.Show("Xóa thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                            }
+                            else
+                                MessageBox.Show("Xóa thất bại!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
-                        else
-                            MessageBox.Show("Xóa thất bại!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        catch
+                        {
+                            MessageBox.Show("Không thể xóa!!!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    catch
-                    {
-                        MessageBox.Show("Không thể xóa!!!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Chưa chọn khách hàng cần xóa!", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch
             {
-                MessageBox.Show("Chưa chọn thực đơn cần xóa!", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Chưa chọn khách hàng cần xóa!", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

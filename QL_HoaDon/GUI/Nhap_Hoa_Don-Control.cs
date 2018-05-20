@@ -48,10 +48,7 @@ namespace QL_HoaDon.GUI
             lbTCTTT.Text = So_chu(double.Parse(tbTCTTT.Text));
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -70,7 +67,9 @@ namespace QL_HoaDon.GUI
             comboBox1.DataSource = listHTTT;
             comboBox1.DisplayMember = "TenHTTT";
             comboBox1.ValueMember = "MaHTTT";
-            
+            DataTable listDVMH = DVMHBLL.LayDSDVMH();
+            comboBoxDVM.Properties.DataSource = listDVMH;
+            comboBoxDVM.Properties.DisplayMember = "TenDonViMuaHang";
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -85,8 +84,12 @@ namespace QL_HoaDon.GUI
             tbSDT.Text = "";
             tbSTK.Text = "";
             TGTGT.Text = "";
-            tbNVBH.Text = "";
             comboBox2.Text = "";
+            tbTHH.Text = "";
+            tbDVT.Text = "";
+            tbSoLuong.Text = "";
+            DonGia.Text = "";
+            ThanhTien.Text = "";
             dtpNgayBan.Value = DateTime.Now;
             tbSHD.Focus();
         }
@@ -117,6 +120,8 @@ namespace QL_HoaDon.GUI
                 if (kq1 == true)
                 {
                     MessageBox.Show("Thêm Đơn thành công!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DataTable _dshd = HoaDonBLL.LayDSHD();
+                    dgvHoaDon.DataSource = _dshd;
                 }
                 else
                     MessageBox.Show("Hóa Đơn này đã có!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -167,6 +172,13 @@ namespace QL_HoaDon.GUI
                             if (kq1 == true)
                             {
                                 MessageBox.Show("Xóa thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                DataTable _dshd = HoaDonBLL.LayDSHD();
+                                dgvHoaDon.DataSource = _dshd;
+                                dgvHHTT.DataSource = null;
+                                dgvHHTT.Rows.Clear();
+                                tbCTH.Text = "";
+                                tbTTGTGT.Text = "";
+                                tbTCTTT.Text = "0";
                             }
                             else
                                 MessageBox.Show("Xóa thất bại!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -208,14 +220,23 @@ namespace QL_HoaDon.GUI
 
         private void tbSoLuong_TextChanged(object sender, EventArgs e)
         {
-            if (tbSoLuong.Text != "")
+            try
             {
-                float S = 0;
-                S = int.Parse(tbSoLuong.Text) * float.Parse(DonGia.Text);
-                ThanhTien.Text = S.ToString();
+
+                if (tbSoLuong.Text != "")
+                {
+                    float S = 0;
+                    S = int.Parse(tbSoLuong.Text) * float.Parse(DonGia.Text);
+                    ThanhTien.Text = S.ToString();
+                }
+                else
+                    ThanhTien.Text = "";
             }
-            else
-                ThanhTien.Text = "";
+            catch
+            {
+                MessageBox.Show("Bạn Chưa Chọn Hàng Hóa", "Thông báo");
+                tbSoLuong.Text = "";
+            }
         }
 
         private void dgvHHTT_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -242,7 +263,7 @@ namespace QL_HoaDon.GUI
             int rowindex = dgvHoaDon.CurrentCell.RowIndex;
             int columnindex = dgvHoaDon.CurrentCell.ColumnIndex;
             string result = dgvHoaDon.Rows[rowindex].Cells[0].Value.ToString();
-            HangHoaTrucTiep httt = new HangHoaTrucTiep();
+            CTHoaDon httt = new CTHoaDon();
             HoaDon hd = new HoaDon();
             try
             {
@@ -260,13 +281,17 @@ namespace QL_HoaDon.GUI
                     TinhTong();
                     hd.TongTien = float.Parse (tbTCTTT.Text);
                     HoaDonBLL.UpdateHD(hd);
+                    int x = dgvHoaDon.CurrentCell.RowIndex;
+                    string y = dgvHoaDon.Rows[rowindex].Cells[0].Value.ToString();
+                    DataTable _dshhtt = HangHoaTTBLL.LayDSHHTT(y);
+                    dgvHHTT.DataSource = _dshhtt;
                 }
                 else
                     MessageBox.Show("Hóa Đơn này đã có!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch
             {
-                MessageBox.Show("Nhập sai định dạng", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hàng hóa đã đã có!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -314,7 +339,10 @@ namespace QL_HoaDon.GUI
                         if (kq1 == true)
                         {
                             MessageBox.Show("Xóa thành công!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                            int x = dgvHoaDon.CurrentCell.RowIndex;
+                            string y = dgvHoaDon.Rows[rowindex].Cells[0].Value.ToString();
+                            DataTable _dshhtt = HangHoaTTBLL.LayDSHHTT(y);
+                            dgvHHTT.DataSource = _dshhtt;
                         }
                         else
                             MessageBox.Show("Xóa thất bại!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -366,6 +394,8 @@ namespace QL_HoaDon.GUI
                     if (kq1 == true)
                     {
                         MessageBox.Show("Cập nhật hóa đơn thành công!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        DataTable _dshd = HoaDonBLL.LayDSHD();
+                        dgvHoaDon.DataSource = _dshd;
                     }
                     else
                         MessageBox.Show("hàng hóa này đã có!", "Thông báo!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -441,9 +471,7 @@ namespace QL_HoaDon.GUI
 
         private void comboBoxDVM_Click(object sender, EventArgs e)
         {
-            DataTable listDVMH = DVMHBLL.LayDSDVMH();
-            comboBoxDVM.Properties.DataSource = listDVMH;
-            comboBoxDVM.Properties.DisplayMember = "TenDonViMuaHang";
+            
         }
 
         private void label29_Click(object sender, EventArgs e)
@@ -639,6 +667,18 @@ namespace QL_HoaDon.GUI
         }
 
         private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxDVM_MouseDown(object sender, MouseEventArgs e)
+        {
+            DataTable listDVMH = DVMHBLL.LayDSDVMH();
+            comboBoxDVM.Properties.DataSource = listDVMH;
+            comboBoxDVM.Properties.DisplayMember = "TenDonViMuaHang";
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

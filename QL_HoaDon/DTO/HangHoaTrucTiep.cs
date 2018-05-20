@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QL_HoaDon.DTO
 {
-    class HangHoaTrucTiep
+    class CTHoaDon
     {
         public int SoHD { get; set; }
         public string MaHang { get; set; }

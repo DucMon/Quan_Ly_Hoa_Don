@@ -24,7 +24,7 @@ namespace QL_HoaDon.DAO
         }
         public static bool XoaHDTheoMa(string sHD)
         {
-            string sql = "delete QuanLyHoaDon.dbo.HangHoaTrucTiep where SoHD = " + sHD;
+            string sql = "delete QuanLyHoaDon.dbo.CTHoaDon where SoHD = " + sHD;
             bool kq = DBConnection.ExecuteNonQuery(sql);
             sql = "delete HoaDonBan where SoHDBan = " + sHD;
             kq = DBConnection.ExecuteNonQuery(sql);

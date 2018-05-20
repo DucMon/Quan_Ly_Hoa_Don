@@ -13,38 +13,38 @@ namespace QL_HoaDon.DAO
     {
         public static DataTable TraCuuHHTheoTen(string keyword)
         {
-            string sql = string.Format("select * from DMHangHoa where TenHang like N'%{0}%'", keyword);
+            string sql = string.Format("select * from HangHoa where TenHang like N'%{0}%'", keyword);
             DataTable kq = DBConnection.ExecuteQuery(sql);
             return kq;
         }
         public static DataTable LayDSHH()
         {
-            string sql = "select * from DMHangHoa";
+            string sql = "select * from HangHoa";
             DataTable dt = DBConnection.ExecuteQuery(sql);
             return dt;
         }
         public static bool ThemHH(HangHoa hh)
         {
-            string sql = string.Format("insert into DMHangHoa values ('{0}', '{1}', '{2}', {3}, '{4}')", hh.MaHang, hh.TenHang, hh.DVT, hh.DonGia, hh.GhiChu);
+            string sql = string.Format("insert into HangHoa values ('{0}', '{1}', '{2}', {3}, '{4}')", hh.MaHang, hh.TenHang, hh.DVT, hh.DonGia, hh.GhiChu);
             bool kq = DBConnection.ExecuteNonQuery(sql);
             return kq;
         }
         public static bool XoaHHTheoMa(string maHH)
         {
-            string sql = "delete QuanLyHoaDon.dbo.DMHangHoa where MaHang = '"+ maHH+"'";
+            string sql = "delete QuanLyHoaDon.dbo.HangHoa where MaHang = '"+ maHH+"'";
             bool kq = DBConnection.ExecuteNonQuery(sql);
             return kq;
         }
         public static bool UpdateHH(HangHoa hh)
         {
-            string sql = string.Format("UPDATE DMHangHoa SET TenHang = '" +hh.TenHang+ "', DVT = '" + hh.DVT + "' , DonGia = " +hh.DonGia+  ", GhiChu = '" + hh.GhiChu + "'WHERE MaHang = '" + hh.MaHang +"'");
+            string sql = string.Format("UPDATE HangHoa SET TenHang = '" +hh.TenHang+ "', DVT = '" + hh.DVT + "' , DonGia = " +hh.DonGia+  ", GhiChu = '" + hh.GhiChu + "'WHERE MaHang = '" + hh.MaHang +"'");
             bool kq = DBConnection.ExecuteNonQuery(sql);
             return kq;
         }
         public static List<String> LayListHH()
         {
             List<String> _ds = new List<String>();
-            string sql = "select * from DMHangHoa";
+            string sql = "select * from HangHoa";
             DataTable dt = DBConnection.ExecuteQuery(sql);
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -54,7 +54,7 @@ namespace QL_HoaDon.DAO
         }
         public static DataTable LayDuLieuChoTB(string maHH)
         {
-            string sql = string.Format("select * from DMHangHoa where MaHang like N'%{0}%'", maHH);
+            string sql = string.Format("select * from HangHoa where MaHang like N'%{0}%'", maHH);
             DataTable dt = DBConnection.ExecuteQuery(sql);
             return dt;
         }

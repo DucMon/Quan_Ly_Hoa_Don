@@ -13,18 +13,18 @@ namespace QL_HoaDon.BLL
     {
         public static DataTable LayDSHHTT(string maHD)
         {
-            DataTable dt = HangHoaTrucTiepDAL.LayDSHHTT(maHD);
+            DataTable dt = CTHoaDonDAL.LayDSHHTT(maHD);
             return dt;
         }
         
-        public static bool ThemHHVaoHD(HangHoaTrucTiep hhtt)
+        public static bool ThemHHVaoHD(CTHoaDon hhtt)
         {
-            bool kq = HangHoaTrucTiepDAL.ThemHHVaoHD(hhtt);
+            bool kq = CTHoaDonDAL.ThemHHVaoHD(hhtt);
             return kq;
         }
         public static bool XoaHHTTTheoMa(string maHH,int maHD)
         {
-            bool kq = HangHoaTrucTiepDAL.XoaHHTTTheoMa(maHH,maHD);
+            bool kq = CTHoaDonDAL.XoaHHTTTheoMa(maHH,maHD);
             return kq;
         }
     }

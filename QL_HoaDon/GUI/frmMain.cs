@@ -85,16 +85,6 @@ namespace QL_HoaDon.GUI
         }
         private void button4_MouseHover(object sender, EventArgs e)
         {
-            btnClose.Size = new Size(159, 48);
-            Thread.Sleep(700);
-            btnClose.Size = new Size(159, 58);
-            Thread.Sleep(50);
-            btnClose.Size = new Size(159, 68);
-            Thread.Sleep(560);
-            btnClose.Size = new Size(159, 78);
-            Thread.Sleep(50);
-            btnClose.Size = new Size(159, 88);
-            Thread.Sleep(50);
             btnClose.Size = new Size(159, 98);
         }
 
@@ -111,6 +101,11 @@ namespace QL_HoaDon.GUI
         private void button2_Click(object sender, EventArgs e)
         {
             frmNhapHoaDon.BringToFront();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
